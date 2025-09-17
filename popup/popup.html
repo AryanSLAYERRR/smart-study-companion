@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Companion</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header class="extension-header">
+        <div class="header-content">
+            <img src="../assets/icons/icon48.png" alt="Smart Study Companion" class="logo">
+            <h1 class="app-title">Smart Study Companion</h1>
+        </div>
+    </header>
+    <main class="main-content"> 
+        <section class ="stats-section">
+            <h2 class="section-title">Today's Progress</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-label">Study Time:</span>
+                    <span id="study-time-display" class="stat-value">0 mins</span>
+                </div>
+                <div>
+                    <span class="stat-label">Last Score:</span>
+                    <span id="last-score-display" class="stat-value">N/A</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions-section">
+            <h2 class ="section-title">Quick Actions</h2>
+            <div class="button-grid">
+                <button id="start-test-btn" class="action-button primary">
+                📝 Start Test
+                </button>
+                <button id="review-flashcards-btn" class="action-button secondary">
+                🃏 Flashcards
+                </button>
+                <button id="open-dashboard-btn" class="action-button secondary">
+                📊 Dashboard
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="extension-footer">
+        <button id="settings-btn" class="footer-button">⚙️ Settings</button>
+    <script src="popup.js"></script>
+</body>
+</html>
